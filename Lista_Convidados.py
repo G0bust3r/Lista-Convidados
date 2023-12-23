@@ -3,6 +3,9 @@ Exercicio: Faça um programa que leia a quantidade de pessoas que serão convida
 Após isso o programa ira perguntar o nome de todas as pessoas e colocar numa lista de convidados;
 Após isso irá imprimir todos os nomes da lista.
 '''
+
+import os
+
 print('#################################')
 print ('#### Controle de convidados: #### ')
 print('#################################\n')
@@ -22,13 +25,16 @@ while contador <= quant_convidados: # Se fosse com for: for contador in range(in
 
 contador_convidados = 1
 
+# Limpar a tela (Windows)
+os.system('cls')
+
 print('\nQuantidade Convidados: ', quant_convidados )
 print('\nLista de Convidados: ') 
 for i, convidado in enumerate (lista_de_convidados, start=1):
  print (str(i), '-', (convidado)) 
 
 # Mensagem final
-print('\nPrograma concluído. Obrigado por utilizar o Controle de Convidados!')
+print('\nPrograma concluído. \nObrigado por utilizar o Controle de Convidados!')
 
 
 
